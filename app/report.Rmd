@@ -1,0 +1,48 @@
+---
+title: "PO activity report"
+author: "sjp"
+date: "`r lubridate::today()`"
+output: html_document
+params:
+  plots_lambda475: NA
+  plots_lambda600: NA
+  plots_lambda490: NA
+  rendered_by_shiny: FALSE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+```
+
+```{r}
+if (params$rendered_by_shiny)
+  shiny::setProgress(0.1)
+```
+
+# lambda 475
+
+```{r out.width = "50%"}
+params$plots_lambda475
+
+if (params$rendered_by_shiny)
+  shiny::setProgress(.4)
+```
+
+# lambda 600
+
+```{r out.width = "50%"}
+params$plots_lambda600
+
+if (params$rendered_by_shiny)
+  shiny::setProgress(.7)
+```
+
+# lambda 490
+
+```{r out.width = "50%"}
+params$plots_lambda490
+
+if (params$rendered_by_shiny)
+  shiny::setProgress(1)
+```
+
