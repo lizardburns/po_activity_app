@@ -1,9 +1,6 @@
----
-title: "PO activity calculator"
----
-
 ![](logo.png)
 
+# PO activity calculator
 > Automated phenoloxidase activity calculation from absorbance assay data
 
 This shiny app takes absorbance assay data for 96-well plate runs in an xlsx file and protein mass and sample IDs in a csv file and automates calculation of the maximum velocity and phenoloxidase activity standardised by protein mass and time (in minutes).  
