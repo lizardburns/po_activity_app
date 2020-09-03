@@ -5,3 +5,4 @@
 *.Rproj
 deploy.R
 README.html
+app/rsconnect/

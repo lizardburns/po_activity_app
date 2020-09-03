@@ -37,7 +37,7 @@ ui <- fluidPage(
                     column(2),
                     column(3, downloadButton("report_dload", "Download report"))),
            br(),
-           helpText("Refresh the browser to analyse another assay run or view results summary below.")
+           helpText("Refresh the browser to analyse another assay run or view results summary below."),
            br(),
            helpText("Hover over points to reveal the sample ID"),
            plotlyOutput("plot1")
