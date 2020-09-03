@@ -31,12 +31,13 @@ ui <- fluidPage(
          br(),
          conditionalPanel(
            condition = "output.filesUploaded",
-           helpText("Your results and report (with absorbance vs time plots) are available to download by clicking the buttons below"),
+           helpText("Your results and report (with absorbance vs time plots) are available to download by clicking the buttons below. Results are also plotted below."),
            br(),
            fluidRow(column(3, downloadButton("results_dload", "Download results")),
                     column(2),
                     column(3, downloadButton("report_dload", "Download report"))),
            br(),
+           helpText("Refresh the browser to analyse another assay run or view results summary below.")
            br(),
            helpText("Hover over points to reveal the sample ID"),
            plotlyOutput("plot1")
