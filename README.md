@@ -41,7 +41,7 @@ This app analyses absorbance data in order to calculate phenoloxidase activity p
 * Deducts blank value and standardises per milligram of protein (using user supplied protein mass).
 * Makes two files available for download:
   - csv file with results
-  - html report (rendered rmarkdown document) with a plot of absorbance against time for each reaction, which should be scanned by users to verify accuracy of curve-fitting. Fitted line shown for span of timepoints used in estimation and vertical line on plot marks timepoint where maximum velocity recorded.
+  - html report (rendered rmarkdown document) with a plot of absorbance against time for each reaction, which should be scanned by users to verify accuracy of curve-fitting and identify any reactions where it may be better to calculate the maximum velocity manually. Fitted line shown for span of timepoints used in estimation and vertical line on plot marks timepoint where maximum velocity recorded.
 * example input data files are available to present expected input file format.
 
 ## Contributing
